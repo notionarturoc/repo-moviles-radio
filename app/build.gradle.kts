@@ -26,8 +26,8 @@ android {
         // Identificador único de la aplicación
         applicationId = "com.tomorrowland.audioplayer"
         
-        // SDK mínimo requerido (Android 7.0 Nougat)
-        minSdk = 24
+        // SDK mínimo requerido (Android 8.0 Oreo)
+        minSdk = 26
         
         // SDK objetivo (Android 14)
         targetSdk = 34

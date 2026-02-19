@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="active">#10b981</color>
+    <color name="background_dark">#101622</color>
+    <color name="background_light">#f6f6f8</color>
+    <color name="background_medium">#1a1f2e</color>
+    <color name="badge_gold">#fbbf24</color>
+    <color name="badge_primary">#135bec</color>
+    <color name="badge_secondary">#7c3aed</color>
+    <color name="divider">#2d3748</color>
+    <color name="error">#f87171</color>
+    <color name="error_container">#7f1d1d</color>
+    <color name="glass_background">#CC101622</color>
+    <color name="glass_border">#33FFFFFF</color>
+    <color name="gradient_end">#fbbf24</color>
+    <color name="gradient_middle">#7c3aed</color>
+    <color name="gradient_start">#135bec</color>
+    <color name="mini_player_background">#1a1f2e</color>
+    <color name="mini_player_progress">#135bec</color>
+    <color name="nav_selected">#135bec</color>
+    <color name="nav_unselected">#6b7280</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_primary_container">#c4d9ff</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_secondary_container">#e9ddff</color>
+    <color name="on_surface">#FFFFFF</color>
+    <color name="on_surface_variant">#b8bcc8</color>
+    <color name="on_tertiary">#000000</color>
+    <color name="on_tertiary_container">#fef3c7</color>
+    <color name="outline">#374151</color>
+    <color name="primary">#135bec</color>
+    <color name="primary_container">#1e3a5f</color>
+    <color name="primary_dark">#0d47a1</color>
+    <color name="primary_light">#5c8ff0</color>
+    <color name="progress_indicator">#135bec</color>
+    <color name="progress_track">#3d4451</color>
+    <color name="ripple_dark">#33000000</color>
+    <color name="ripple_light">#33FFFFFF</color>
+    <color name="secondary">#7c3aed</color>
+    <color name="secondary_container">#3d1f6d</color>
+    <color name="secondary_dark">#5b21b6</color>
+    <color name="secondary_light">#a78bfa</color>
+    <color name="success">#34d399</color>
+    <color name="surface">#1a1f2e</color>
+    <color name="surface_container">#1e2433</color>
+    <color name="surface_container_high">#282d3d</color>
+    <color name="surface_variant">#242936</color>
+    <color name="tertiary">#fbbf24</color>
+    <color name="tertiary_container">#422006</color>
+    <color name="tertiary_dark">#d97706</color>
+    <color name="tertiary_light">#fcd34d</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_secondary">#FFFFFF</color>
+    <color name="text_on_tertiary">#000000</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9ca3af</color>
+    <color name="text_tertiary">#6b7280</color>
+    <dimen name="album_art_size">280dp</dimen>
+    <dimen name="bottom_nav_height">56dp</dimen>
+    <dimen name="control_button_size">48dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="elevation_extra_high">16dp</dimen>
+    <dimen name="elevation_high">8dp</dimen>
+    <dimen name="elevation_low">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="header_height">64dp</dimen>
+    <dimen name="hero_card_height">200dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_sm">16dp</dimen>
+    <dimen name="icon_standard">28dp</dimen>
+    <dimen name="icon_xl">48dp</dimen>
+    <dimen name="margin_lg">24dp</dimen>
+    <dimen name="margin_md">12dp</dimen>
+    <dimen name="margin_sm">8dp</dimen>
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_xl">32dp</dimen>
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_xxl">48dp</dimen>
+    <dimen name="mini_player_height">72dp</dimen>
+    <dimen name="padding_lg">24dp</dimen>
+    <dimen name="padding_md">12dp</dimen>
+    <dimen name="padding_sm">8dp</dimen>
+    <dimen name="padding_standard">16dp</dimen>
+    <dimen name="padding_xl">32dp</dimen>
+    <dimen name="padding_xs">4dp</dimen>
+    <dimen name="padding_xxl">48dp</dimen>
+    <dimen name="play_button_size">72dp</dimen>
+    <dimen name="progress_height">4dp</dimen>
+    <dimen name="progress_height_thick">6dp</dimen>
+    <dimen name="radius_full">9999dp</dimen>
+    <dimen name="radius_lg">20dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_standard">16dp</dimen>
+    <dimen name="radius_xl">24dp</dimen>
+    <dimen name="status_bar_spacer">24dp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_display">32sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_overline">10sp</dimen>
+    <dimen name="text_subtitle">16sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="track_item_height">72dp</dimen>
+    <dimen name="track_thumbnail_size">56dp</dimen>
+    <string name="about">Acerca de</string>
+    <string name="airplay">AirPlay</string>
+    <string name="app_name">Tomorrowland Audio Player</string>
+    <string name="app_subtitle">Systems Engineering Hub</string>
+    <string name="app_version">v1.0.0</string>
+    <string name="cd_album_art">Portada del álbum</string>
+    <string name="cd_back_button">Botón de volver</string>
+    <string name="cd_favorite_button">Botón de favorito</string>
+    <string name="cd_menu_button">Botón de menú</string>
+    <string name="cd_next_button">Botón de siguiente canción</string>
+    <string name="cd_pause_button">Botón de pausar</string>
+    <string name="cd_play_button">Botón de reproducir</string>
+    <string name="cd_previous_button">Botón de canción anterior</string>
+    <string name="cd_progress_bar">Barra de progreso de reproducción</string>
+    <string name="cd_repeat_button">Botón de repetir</string>
+    <string name="cd_shuffle_button">Botón de mezclar</string>
+    <string name="cd_track_thumbnail">Miniatura del track</string>
+    <string name="concept_api">API: Application Programming Interface</string>
+    <string name="concept_json">JSON: JavaScript Object Notation</string>
+    <string name="concept_streaming">Streaming: Reproducción en tiempo real</string>
+    <string name="curated_playlist">Curated Playlist</string>
+    <string name="default_duration">0:00</string>
+    <string name="default_time">0:00</string>
+    <string name="error_loading">Error al cargar</string>
+    <string name="favorite">Favorito</string>
+    <string name="featured_stream">FEATURED STREAM</string>
+    <string name="featured_subtitle">Streaming live via YouTube Data API v3</string>
+    <string name="featured_title">API Integration Demo</string>
+    <string name="five_tracks">5 TRACKS</string>
+    <string name="home_subtitle">Systems Engineering Hub</string>
+    <string name="home_title">Tomorrowland 2024</string>
+    <string name="library_placeholder">Aquí aparecerán tus playlists y favoritos</string>
+    <string name="library_title">Tu Biblioteca</string>
+    <string name="liked_songs">Canciones Favoritas</string>
+    <string name="loading">Cargando...</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="more_options">Más opciones</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_library">Library</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_search">Search</string>
+    <string name="next">Siguiente</string>
+    <string name="no_connection">Sin conexión a Internet</string>
+    <string name="no_tracks">No hay tracks disponibles</string>
+    <string name="now_playing">NOW PLAYING</string>
+    <string name="pause">Pausar</string>
+    <string name="play">Reproducir</string>
+    <string name="previous">Anterior</string>
+    <string name="profile_placeholder">Configura tu cuenta y preferencias</string>
+    <string name="profile_title">Perfil</string>
+    <string name="queue">Cola de reproducción</string>
+    <string name="recently_played">Reproducido Recientemente</string>
+    <string name="repeat">Repetir</string>
+    <string name="retry">Reintentar</string>
+    <string name="search_hint">Buscar canciones, artistas...</string>
+    <string name="search_placeholder">Explora nuevos tracks y artistas de Tomorrowland</string>
+    <string name="search_title">Buscar</string>
+    <string name="settings">Configuración</string>
+    <string name="shuffle">Mezclar</string>
+    <string name="streaming_from_youtube">STREAMING FROM YOUTUBE URL</string>
+    <string name="student_email">estudiante@universidad.edu</string>
+    <string name="student_name">Estudiante H8B</string>
+    <string name="tomorrowland_radio">Tomorrowland Radio</string>
+    <string name="track_1_artist">Armin van Buuren</string>
+    <string name="track_1_badge">JSON_SRC, 320KBPS</string>
+    <string name="track_1_title">Pura Vida</string>
+    <string name="track_2_artist">Martin Garrix</string>
+    <string name="track_2_badge">YT_DATA_V3</string>
+    <string name="track_2_title">High on Life</string>
+    <string name="track_3_artist">Dimitri Vegas &amp; Like Mike</string>
+    <string name="track_3_badge">LEGACY_IO</string>
+    <string name="track_3_title">Mammoth</string>
+    <string name="track_4_artist">RÜFÜS DU SOL</string>
+    <string name="track_4_title">Innerbloom</string>
+    <string name="track_5_artist">Tiësto</string>
+    <string name="track_5_title">Adagio for Strings</string>
+    <string name="tracks_count">%d TRACKS</string>
+    <string name="up_next">Up Next</string>
+    <style name="BottomNavStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="itemIconTint">@drawable/nav_item_color</item>
+        <item name="itemTextColor">@drawable/nav_item_color</item>
+        <item name="itemActiveIndicatorStyle">@style/NavIndicatorStyle</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+    <style name="ButtonStyle.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="iconTint">@color/text_primary</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+    <style name="ButtonStyle.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="cornerRadius">@dimen/radius_full</item>
+    </style>
+    <style name="ButtonStyle.PlayMain" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="iconTint">@color/on_primary</item>
+        <item name="android:minWidth">@dimen/play_button_size</item>
+        <item name="android:minHeight">@dimen/play_button_size</item>
+    </style>
+    <style name="ButtonStyle.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="cornerRadius">@dimen/radius_full</item>
+    </style>
+    <style name="CardStyle.Glass" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/glass_background</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+    <style name="CardStyle.Standard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/surface_container</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">@dimen/elevation_low</item>
+    </style>
+    <style name="CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="NavIndicatorStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/primary_container</item>
+    </style>
+    <style name="RoundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_md</item>
+    </style>
+    <style name="TextStyle.Badge" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/text_overline</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+    <style name="TextStyle.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+    <style name="TextStyle.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+    </style>
+    <style name="TextStyle.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextStyle.Subtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_subtitle</item>
+    </style>
+    <style name="TextStyle.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Theme.TomorrowlandAudioPlayer" parent="Theme.Material3.Dark.NoActionBar">
+        
+        
+        
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        
+        
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
+        
+        
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorTertiaryContainer">@color/tertiary_container</item>
+        <item name="colorOnTertiary">@color/on_tertiary</item>
+        <item name="colorOnTertiaryContainer">@color/on_tertiary_container</item>
+        
+        
+        
+        
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        
+        
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorSurfaceContainer">@color/surface_container</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        
+        
+        <item name="colorError">@color/error</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnError">@color/on_error</item>
+        
+        
+        <item name="colorOutline">@color/outline</item>
+        
+        
+        
+        
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        
+        
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" ns1:targetApi="o_mr1">false</item>
+        
+        
+        
+        
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        
+        
+        <item name="android:windowAnimationStyle">@style/WindowAnimationStyle</item>
+        
+    </style>
+    <style name="WindowAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>

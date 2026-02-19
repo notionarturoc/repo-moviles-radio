@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Tomorrowland Audio Player - Home Fragment (Pantalla Principal)
+    ============================================================================
+    
+    🏠 PANTALLA HOME:
+    
+    Esta es la pantalla principal de la aplicación. Contiene:
+    1. Header con efecto glassmorphism y logo
+    2. Hero Card con featured stream
+    3. Sección de playlist con RecyclerView
+    
+    📝 CONCEPTOS EDUCATIVOS:
+    - NestedScrollView: Permite scroll anidado con RecyclerView
+    - RecyclerView: Lista eficiente y reciclable
+    - CardView: Tarjetas con sombra Material Design
+    - Efecto Glassmorphism: Simula vidrio esmerilado
+-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- Contenido scrolleable -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/margin_standard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ================================================================
+                 HEADER CON GLASSMORPHISM
+                 ================================================================ -->
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_glass"
+                android:padding="@dimen/padding_standard"
+                android:layout_marginStart="@dimen/margin_standard"
+                android:layout_marginEnd="@dimen/margin_standard"
+                android:layout_marginTop="@dimen/margin_standard">
+
+                <!-- Logo Icon -->
+                <ImageView
+                    android:id="@+id/logo_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_graphic_eq"
+                    android:contentDescription="@string/app_name" />
+
+                <!-- Título y Subtítulo -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/margin_md">
+
+                    <!-- Título: Tomorrowland 2024 -->
+                    <TextView
+                        android:id="@+id/header_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_title"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_title"
+                        android:textStyle="bold" />
+
+                    <!-- Subtítulo -->
+                    <TextView
+                        android:id="@+id/header_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_subtitle"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_caption" />
+                </LinearLayout>
+
+                <!-- Botón de código/info -->
+                <ImageButton
+                    android:id="@+id/btn_code"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_more_vert"
+                    app:tint="@color/text_primary"
+                    android:contentDescription="@string/more_options" />
+            </LinearLayout>
+
+            <!-- ================================================================
+                 HERO CARD - FEATURED STREAM
+                 ================================================================ -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/hero_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_standard"
+                android:layout_marginEnd="@dimen/margin_standard"
+                android:layout_marginTop="@dimen/margin_lg"
+                app:cardBackgroundColor="@color/surface_container"
+                app:cardCornerRadius="@dimen/radius_lg"
+                app:cardElevation="@dimen/elevation_medium">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Imagen del Hero (aspect ratio 16:9) -->
+                    <ImageView
+                        android:id="@+id/hero_image"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/bg_gradient_tomorrowland"
+                        app:layout_constraintDimensionRatio="16:9"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:contentDescription="@string/featured_title" />
+
+                    <!-- Overlay gradient para texto -->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/bg_gradient_tomorrowland"
+                        android:alpha="0.7"
+                        app:layout_constraintBottom_toBottomOf="@id/hero_image"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <!-- Badge "FEATURED STREAM" -->
+                    <TextView
+                        android:id="@+id/hero_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/featured_stream"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_overline"
+                        android:textStyle="bold"
+                        android:background="@drawable/bg_badge"
+                        android:paddingHorizontal="@dimen/padding_sm"
+                        android:paddingVertical="@dimen/padding_xs"
+                        android:layout_margin="@dimen/margin_md"
+                        app:layout_constraintTop_toTopOf="@id/hero_image"
+                        app:layout_constraintStart_toStartOf="@id/hero_image" />
+
+                    <!-- Contenido del Hero -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_standard"
+                        app:layout_constraintTop_toBottomOf="@id/hero_image"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <TextView
+                            android:id="@+id/hero_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/featured_title"
+                            android:textColor="@color/text_primary"
+                            android:textSize="@dimen/text_subtitle"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hero_subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/featured_subtitle"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="@dimen/text_caption"
+                            android:layout_marginTop="@dimen/margin_xs" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ================================================================
+                 SECCIÓN DE PLAYLIST
+                 ================================================================ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_lg"
+                android:paddingHorizontal="@dimen/padding_standard">
+
+                <!-- Header de la sección -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Título "Curated Playlist" -->
+                    <TextView
+                        android:id="@+id/playlist_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/curated_playlist"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_title"
+                        android:textStyle="bold" />
+
+                    <!-- Badge "5 TRACKS" -->
+                    <TextView
+                        android:id="@+id/tracks_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/five_tracks"
+                        android:textColor="@color/tertiary"
+                        android:textSize="@dimen/text_overline"
+                        android:textStyle="bold"
+                        android:background="@drawable/bg_badge"
+                        android:paddingHorizontal="@dimen/padding_sm"
+                        android:paddingVertical="@dimen/padding_xs" />
+                </LinearLayout>
+
+                <!-- RecyclerView para la lista de tracks -->
+                <!-- 
+                    📝 NOTA EDUCATIVA:
+                    RecyclerView es más eficiente que ListView porque:
+                    1. Recicla las vistas que salen de la pantalla
+                    2. Usa ViewHolder para evitar findViewById repetidos
+                    3. Soporta diferentes tipos de layouts (Linear, Grid, Staggered)
+                -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tracks_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_md"
+                    android:nestedScrollingEnabled="false"
+                    android:clipToPadding="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/item_track" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

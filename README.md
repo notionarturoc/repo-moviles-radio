@@ -4,7 +4,7 @@
 
 ![Material Design 3](https://img.shields.io/badge/Material%20Design-3-6750A4)
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9.20-7F52FF)
-![API Level](https://img.shields.io/badge/API-24%2B-brightgreen)
+![API Level](https://img.shields.io/badge/API-26%2B-brightgreen)
 
 ---
 
@@ -220,7 +220,7 @@ object AudioPlayerManager {
 
 ### Error: "No emulator/device found"
 1. Abre AVD Manager
-2. Crea un emulador con API 24+
+2. Crea un emulador con API 26+
 3. Inicia el emulador antes de ejecutar
 
 ---

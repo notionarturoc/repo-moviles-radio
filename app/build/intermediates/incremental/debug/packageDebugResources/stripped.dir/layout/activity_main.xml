@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Tomorrowland Audio Player - Layout Principal (MainActivity)
+    ============================================================================
+    
+    🏗️ ESTRUCTURA DE LA ACTIVIDAD PRINCIPAL:
+    
+    Esta actividad usa el patrón Single Activity + Multiple Fragments.
+    Contiene:
+    1. NavHostFragment: Contenedor donde se cargan los fragments
+    2. Mini Player: Reproductor flotante visible en todas las pantallas
+    3. BottomNavigationView: Navegación principal con 4 tabs
+    
+    📌 CONCEPTOS CLAVE:
+    - ConstraintLayout: Layout flexible basado en restricciones
+    - NavHostFragment: Contenedor del Navigation Component
+    - BottomNavigationView: Barra de navegación inferior de Material Design
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".MainActivity">
+
+    <!-- ====================================================================
+         NavHostFragment: Contenedor de Fragmentos
+         ==================================================================== 
+         
+         Este es el contenedor donde el Navigation Component carga los fragments.
+         El atributo navGraph conecta este contenedor con nuestro grafo de navegación.
+    -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mini_player_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ====================================================================
+         Mini Player: Reproductor Flotante
+         ==================================================================== 
+         
+         Aparece cuando hay un track seleccionado.
+         Permite controlar la reproducción sin ir a la pantalla completa.
+         Por defecto está oculto (visibility=gone).
+    -->
+    <include
+        android:id="@+id/mini_player_container"
+        layout="@layout/layout_mini_player"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <!-- ====================================================================
+         Bottom Navigation: Navegación Inferior
+         ==================================================================== 
+         
+         Barra de navegación principal con 4 tabs:
+         - Home: Playlist principal
+         - Search: Búsqueda de música
+         - Library: Biblioteca personal
+         - Profile: Perfil del usuario
+         
+         El menú se define en res/menu/bottom_nav_menu.xml
+    -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@drawable/nav_item_color"
+        app:itemTextColor="@drawable/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

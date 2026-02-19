@@ -1,0 +1,195 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    ============================================================================
+4    Tomorrowland Audio Player - AndroidManifest.xml
+5    Archivo de configuración principal de la aplicación
+6    ============================================================================
+7    
+8    Este archivo define:
+9    - Permisos requeridos por la aplicación
+10    - Componentes de la aplicación (Activities, Services, etc.)
+11    - Configuración del tema y nombre de la app
+12-->
+13<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+14    package="com.tomorrowland.audioplayer"
+15    android:versionCode="1"
+16    android:versionName="1.0.0" >
+17
+18    <uses-sdk
+19        android:minSdkVersion="26"
+20        android:targetSdkVersion="34" />
+21
+22    <!--
+23         ====================================================================
+24         PERMISOS DE LA APLICACIÓN
+25         ====================================================================
+26    -->
+27
+28
+29    <!-- Permiso de Internet: Necesario para cargar imágenes y streaming de audio -->
+30    <uses-permission android:name="android.permission.INTERNET" />
+30-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:21:5-67
+30-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:21:22-64
+31
+32    <!-- Permiso de estado de red: Para verificar conectividad -->
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:24:5-79
+33-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:24:22-76
+34
+35    <!-- Permiso de Foreground Service: Para mantener la reproducción en segundo plano -->
+36    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+36-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:27:5-77
+36-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:27:22-74
+37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+37-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:28:5-92
+37-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:28:22-89
+38
+39    <permission
+39-->[androidx.core:core:1.12.0] /Users/arturoc/.gradle/caches/8.13/transforms/86c4c48f3c1a6200cf17b6f3244b3e16/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+40        android:name="com.tomorrowland.audioplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+40-->[androidx.core:core:1.12.0] /Users/arturoc/.gradle/caches/8.13/transforms/86c4c48f3c1a6200cf17b6f3244b3e16/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+41        android:protectionLevel="signature" />
+41-->[androidx.core:core:1.12.0] /Users/arturoc/.gradle/caches/8.13/transforms/86c4c48f3c1a6200cf17b6f3244b3e16/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+42
+43    <uses-permission android:name="com.tomorrowland.audioplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+43-->[androidx.core:core:1.12.0] /Users/arturoc/.gradle/caches/8.13/transforms/86c4c48f3c1a6200cf17b6f3244b3e16/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+43-->[androidx.core:core:1.12.0] /Users/arturoc/.gradle/caches/8.13/transforms/86c4c48f3c1a6200cf17b6f3244b3e16/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+44    <!--
+45 ====================================================================
+46         CONFIGURACIÓN DE LA APLICACIÓN
+47         ====================================================================
+48    -->
+49    <application
+49-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:33:5-63:19
+50        android:allowBackup="true"
+50-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:34:9-35
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.12.0] /Users/arturoc/.gradle/caches/8.13/transforms/86c4c48f3c1a6200cf17b6f3244b3e16/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+52        android:debuggable="true"
+53        android:extractNativeLibs="false"
+54        android:icon="@mipmap/ic_launcher"
+54-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:35:9-43
+55        android:label="@string/app_name"
+55-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:36:9-41
+56        android:roundIcon="@mipmap/ic_launcher_round"
+56-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:37:9-54
+57        android:supportsRtl="true"
+57-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:38:9-35
+58        android:testOnly="true"
+59        android:theme="@style/Theme.TomorrowlandAudioPlayer"
+59-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:39:9-61
+60        android:usesCleartextTraffic="true" >
+60-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:40:9-44
+61
+62        <!--
+63             =================================================================
+64             MainActivity: Actividad principal de la aplicación
+65             Es el punto de entrada y contiene el NavHostFragment
+66             =================================================================
+67        -->
+68        <activity
+68-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:47:9-61:20
+69            android:name="com.tomorrowland.audioplayer.MainActivity"
+69-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:48:13-41
+70            android:exported="true"
+70-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:49:13-36
+71            android:windowSoftInputMode="adjustResize" >
+71-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:51:13-55
+72
+73            <!-- Intent Filter: Define esta actividad como el launcher de la app -->
+74            <intent-filter>
+74-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:54:13-60:29
+75
+76                <!-- Acción MAIN: Esta es la actividad principal -->
+77                <action android:name="android.intent.action.MAIN" />
+77-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:56:17-69
+77-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:56:25-66
+78
+79                <!-- Categoría LAUNCHER: Aparece en el launcher del dispositivo -->
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:59:17-77
+80-->/Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/src/main/AndroidManifest.xml:59:27-74
+81            </intent-filter>
+82        </activity>
+83
+84        <provider
+84-->[androidx.emoji2:emoji2:1.2.0] /Users/arturoc/.gradle/caches/8.13/transforms/12a28a5ecff5b5713fe47010d0eb42d5/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+85            android:name="androidx.startup.InitializationProvider"
+85-->[androidx.emoji2:emoji2:1.2.0] /Users/arturoc/.gradle/caches/8.13/transforms/12a28a5ecff5b5713fe47010d0eb42d5/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+86            android:authorities="com.tomorrowland.audioplayer.androidx-startup"
+86-->[androidx.emoji2:emoji2:1.2.0] /Users/arturoc/.gradle/caches/8.13/transforms/12a28a5ecff5b5713fe47010d0eb42d5/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+87            android:exported="false" >
+87-->[androidx.emoji2:emoji2:1.2.0] /Users/arturoc/.gradle/caches/8.13/transforms/12a28a5ecff5b5713fe47010d0eb42d5/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+88            <meta-data
+88-->[androidx.emoji2:emoji2:1.2.0] /Users/arturoc/.gradle/caches/8.13/transforms/12a28a5ecff5b5713fe47010d0eb42d5/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+89                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+89-->[androidx.emoji2:emoji2:1.2.0] /Users/arturoc/.gradle/caches/8.13/transforms/12a28a5ecff5b5713fe47010d0eb42d5/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+90                android:value="androidx.startup" />
+90-->[androidx.emoji2:emoji2:1.2.0] /Users/arturoc/.gradle/caches/8.13/transforms/12a28a5ecff5b5713fe47010d0eb42d5/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+91            <meta-data
+91-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/arturoc/.gradle/caches/8.13/transforms/7b6a0df7308cf77403d4938748b4eeb3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+92                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+92-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/arturoc/.gradle/caches/8.13/transforms/7b6a0df7308cf77403d4938748b4eeb3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+93                android:value="androidx.startup" />
+93-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/arturoc/.gradle/caches/8.13/transforms/7b6a0df7308cf77403d4938748b4eeb3/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+94            <meta-data
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+95                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+96                android:value="androidx.startup" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+97        </provider>
+98
+99        <uses-library
+99-->[androidx.window:window:1.0.0] /Users/arturoc/.gradle/caches/8.13/transforms/9e70c8d906fd17f0afbe9682c24a4b90/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+100            android:name="androidx.window.extensions"
+100-->[androidx.window:window:1.0.0] /Users/arturoc/.gradle/caches/8.13/transforms/9e70c8d906fd17f0afbe9682c24a4b90/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+101            android:required="false" />
+101-->[androidx.window:window:1.0.0] /Users/arturoc/.gradle/caches/8.13/transforms/9e70c8d906fd17f0afbe9682c24a4b90/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+102        <uses-library
+102-->[androidx.window:window:1.0.0] /Users/arturoc/.gradle/caches/8.13/transforms/9e70c8d906fd17f0afbe9682c24a4b90/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+103            android:name="androidx.window.sidecar"
+103-->[androidx.window:window:1.0.0] /Users/arturoc/.gradle/caches/8.13/transforms/9e70c8d906fd17f0afbe9682c24a4b90/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+104            android:required="false" />
+104-->[androidx.window:window:1.0.0] /Users/arturoc/.gradle/caches/8.13/transforms/9e70c8d906fd17f0afbe9682c24a4b90/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+105
+106        <receiver
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+107            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+108            android:directBootAware="false"
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+109            android:enabled="true"
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+110            android:exported="true"
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+111            android:permission="android.permission.DUMP" >
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+113                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+114            </intent-filter>
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+116                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+117            </intent-filter>
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+119                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+120            </intent-filter>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+122                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/arturoc/.gradle/caches/8.13/transforms/7ac12dac722f8791201629351e310954/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+123            </intent-filter>
+124        </receiver>
+125    </application>
+126
+127</manifest>

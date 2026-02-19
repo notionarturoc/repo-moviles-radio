@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Tomorrowland Audio Player - Mini Player (Reproductor Flotante)
+    ============================================================================
+    
+    🎵 MINI PLAYER:
+    
+    Es un componente flotante que aparece en la parte inferior de la pantalla
+    cuando hay un track reproduciéndose. Permite:
+    - Ver qué track está sonando
+    - Controles básicos (play/pause, next, previous)
+    - Barra de progreso
+    - Al hacer tap, abre el reproductor completo
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mini_player_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_mini_player"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/padding_md">
+
+    <!-- Barra de progreso superior -->
+    <ProgressBar
+        android:id="@+id/mini_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/progress_height"
+        android:max="100"
+        android:progress="35"
+        android:progressDrawable="@drawable/bg_progress_indicator"
+        android:background="@drawable/bg_progress_track"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/margin_sm"
+        tools:progress="35" />
+
+    <!-- Thumbnail del track (imagen circular) -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/mini_track_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder_album"
+        android:background="@color/surface_variant"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
+        app:layout_constraintTop_toBottomOf="@id/mini_progress_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_sm"
+        android:contentDescription="@string/cd_track_thumbnail" />
+
+    <!-- Contenedor de información del track -->
+    <LinearLayout
+        android:id="@+id/mini_track_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/margin_md"
+        android:layout_marginEnd="@dimen/margin_md"
+        app:layout_constraintTop_toTopOf="@id/mini_track_image"
+        app:layout_constraintBottom_toBottomOf="@id/mini_track_image"
+        app:layout_constraintStart_toEndOf="@id/mini_track_image"
+        app:layout_constraintEnd_toStartOf="@id/mini_controls">
+
+        <!-- Título del track -->
+        <TextView
+            android:id="@+id/mini_track_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Pura Vida" />
+
+        <!-- Artista -->
+        <TextView
+            android:id="@+id/mini_track_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_caption"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp"
+            tools:text="Armin van Buuren" />
+    </LinearLayout>
+
+    <!-- Controles de reproducción -->
+    <LinearLayout
+        android:id="@+id/mini_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="@id/mini_track_image"
+        app:layout_constraintBottom_toBottomOf="@id/mini_track_image"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Botón Previous -->
+        <ImageButton
+            android:id="@+id/mini_btn_previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_skip_previous"
+            app:tint="@color/text_primary"
+            android:contentDescription="@string/cd_previous_button" />
+
+        <!-- Botón Play/Pause -->
+        <ImageButton
+            android:id="@+id/mini_btn_play_pause"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_circle_primary"
+            android:src="@drawable/ic_pause"
+            android:padding="10dp"
+            app:tint="@color/on_primary"
+            android:contentDescription="@string/cd_play_button" />
+
+        <!-- Botón Next -->
+        <ImageButton
+            android:id="@+id/mini_btn_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_skip_next"
+            app:tint="@color/text_primary"
+            android:contentDescription="@string/cd_next_button" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

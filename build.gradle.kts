@@ -6,7 +6,7 @@
 // Configuración de plugins a nivel de proyecto
 plugins {
     // Plugin de Android para aplicaciones - versión 8.2.0
-    id("com.android.application") version "8.2.0" apply false
+    id("com.android.application") version "8.13.2" apply false
     
     // Plugin de Kotlin para Android
     id("org.jetbrains.kotlin.android") version "1.9.20" apply false
