@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Tomorrowland Audio Player - Paleta de Colores
+    Esquema de colores inspirado en Tomorrowland 2024
+    ============================================================================
+    
+    🎨 TEORÍA DEL COLOR EN MATERIAL DESIGN 3:
+    
+    1. Primary: Color principal de la marca
+    2. Secondary: Color complementario para acentos
+    3. Tertiary: Color terciario para variaciones
+    4. Surface: Colores de fondo para tarjetas y paneles
+    5. Background: Color de fondo principal
+    6. Error: Color para mensajes de error
+    
+    Cada color tiene variantes:
+    - Container: Versión más clara/oscura para fondos
+    - On[Color]: Color del texto/iconos sobre ese color
+-->
+<resources>
+    
+    <!-- ====================================================================
+         COLORES PRINCIPALES DE TOMORROWLAND
+         ==================================================================== -->
+    
+    <!-- Primary: Azul vibrante Tomorrowland -->
+    <color name="primary">#135bec</color>
+    <color name="primary_dark">#0d47a1</color>
+    <color name="primary_light">#5c8ff0</color>
+    <color name="primary_container">#1e3a5f</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_primary_container">#c4d9ff</color>
+    
+    <!-- Secondary: Violeta acéntico -->
+    <color name="secondary">#7c3aed</color>
+    <color name="secondary_dark">#5b21b6</color>
+    <color name="secondary_light">#a78bfa</color>
+    <color name="secondary_container">#3d1f6d</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_secondary_container">#e9ddff</color>
+    
+    <!-- Tertiary: Dorado Tomorrowland -->
+    <color name="tertiary">#fbbf24</color>
+    <color name="tertiary_dark">#d97706</color>
+    <color name="tertiary_light">#fcd34d</color>
+    <color name="tertiary_container">#422006</color>
+    <color name="on_tertiary">#000000</color>
+    <color name="on_tertiary_container">#fef3c7</color>
+
+    <!-- ====================================================================
+         COLORES DE FONDO Y SUPERFICIE
+         ==================================================================== -->
+    
+    <!-- Background: Fondo oscuro principal -->
+    <color name="background_dark">#101622</color>
+    <color name="background_medium">#1a1f2e</color>
+    <color name="background_light">#f6f6f8</color>
+    
+    <!-- Surface: Superficies de tarjetas y paneles -->
+    <color name="surface">#1a1f2e</color>
+    <color name="surface_variant">#242936</color>
+    <color name="surface_container">#1e2433</color>
+    <color name="surface_container_high">#282d3d</color>
+    <color name="on_surface">#FFFFFF</color>
+    <color name="on_surface_variant">#b8bcc8</color>
+    
+    <!-- ====================================================================
+         COLORES DEL TEXTO
+         ==================================================================== -->
+    
+    <!-- Texto principal (blanco sobre fondo oscuro) -->
+    <color name="text_primary">#FFFFFF</color>
+    
+    <!-- Texto secundario (gris claro) -->
+    <color name="text_secondary">#9ca3af</color>
+    
+    <!-- Texto terciario (gris más oscuro) -->
+    <color name="text_tertiary">#6b7280</color>
+    
+    <!-- Texto sobre colores primarios -->
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_secondary">#FFFFFF</color>
+    <color name="text_on_tertiary">#000000</color>
+
+    <!-- ====================================================================
+         COLORES DE ESTADO Y ACCIONES
+         ==================================================================== -->
+    
+    <!-- Error -->
+    <color name="error">#f87171</color>
+    <color name="error_container">#7f1d1d</color>
+    <color name="on_error">#FFFFFF</color>
+    
+    <!-- Success/Active -->
+    <color name="success">#34d399</color>
+    <color name="active">#10b981</color>
+    
+    <!-- ====================================================================
+         COLORES ESPECIALES PARA UI
+         ==================================================================== -->
+    
+    <!-- Mini Player -->
+    <color name="mini_player_background">#1a1f2e</color>
+    <color name="mini_player_progress">#135bec</color>
+    
+    <!-- Progress Bar -->
+    <color name="progress_track">#3d4451</color>
+    <color name="progress_indicator">#135bec</color>
+    
+    <!-- Dividers y bordes -->
+    <color name="divider">#2d3748</color>
+    <color name="outline">#374151</color>
+    
+    <!-- Efecto Glassmorphism (para usar con alpha) -->
+    <color name="glass_background">#CC101622</color>
+    <color name="glass_border">#33FFFFFF</color>
+    
+    <!-- Ripple effect -->
+    <color name="ripple_light">#33FFFFFF</color>
+    <color name="ripple_dark">#33000000</color>
+    
+    <!-- Badge colors -->
+    <color name="badge_primary">#135bec</color>
+    <color name="badge_secondary">#7c3aed</color>
+    <color name="badge_gold">#fbbf24</color>
+    
+    <!-- Bottom Navigation -->
+    <color name="nav_selected">#135bec</color>
+    <color name="nav_unselected">#6b7280</color>
+    
+    <!-- Gradiente Tomorrowland (colores individuales) -->
+    <color name="gradient_start">#135bec</color>
+    <color name="gradient_middle">#7c3aed</color>
+    <color name="gradient_end">#fbbf24</color>
+    
+</resources>

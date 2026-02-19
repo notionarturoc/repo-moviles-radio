@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Tomorrowland Audio Player - Recursos de Texto (Strings)
+    ============================================================================
+    
+    📝 BUENAS PRÁCTICAS PARA STRINGS:
+    
+    1. NUNCA hardcodear textos en layouts o código
+    2. Usar nombres descriptivos en snake_case
+    3. Agrupar strings por funcionalidad
+    4. Facilita la traducción a otros idiomas (i18n)
+    
+    🌐 Para traducir la app:
+    - Crear carpeta res/values-es/ para español
+    - Crear carpeta res/values-en/ para inglés
+    - Android selecciona automáticamente según el idioma del dispositivo
+-->
+<resources>
+    
+    <!-- ====================================================================
+         INFORMACIÓN DE LA APLICACIÓN
+         ==================================================================== -->
+    <string name="app_name">Tomorrowland Audio Player</string>
+    <string name="app_subtitle">Systems Engineering Hub</string>
+    <string name="app_version">v1.0.0</string>
+    
+    <!-- ====================================================================
+         PANTALLA HOME (PLAYLIST)
+         ==================================================================== -->
+    <string name="home_title">Tomorrowland 2024</string>
+    <string name="home_subtitle">Systems Engineering Hub</string>
+    <string name="featured_stream">FEATURED STREAM</string>
+    <string name="featured_title">API Integration Demo</string>
+    <string name="featured_subtitle">Streaming live via YouTube Data API v3</string>
+    <string name="curated_playlist">Curated Playlist</string>
+    <string name="tracks_count">%d TRACKS</string>
+    <string name="five_tracks">5 TRACKS</string>
+    
+    <!-- ====================================================================
+         PANTALLA NOW PLAYING (REPRODUCCIÓN)
+         ==================================================================== -->
+    <string name="now_playing">NOW PLAYING</string>
+    <string name="tomorrowland_radio">Tomorrowland Radio</string>
+    <string name="streaming_from_youtube">STREAMING FROM YOUTUBE URL</string>
+    <string name="up_next">Up Next</string>
+    <string name="default_time">0:00</string>
+    <string name="default_duration">0:00</string>
+    
+    <!-- ====================================================================
+         CONTROLES DE REPRODUCCIÓN
+         ==================================================================== -->
+    <string name="play">Reproducir</string>
+    <string name="pause">Pausar</string>
+    <string name="previous">Anterior</string>
+    <string name="next">Siguiente</string>
+    <string name="shuffle">Mezclar</string>
+    <string name="repeat">Repetir</string>
+    <string name="favorite">Favorito</string>
+    <string name="more_options">Más opciones</string>
+    <string name="airplay">AirPlay</string>
+    <string name="queue">Cola de reproducción</string>
+    
+    <!-- ====================================================================
+         NAVEGACIÓN INFERIOR
+         ==================================================================== -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_library">Library</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- ====================================================================
+         PANTALLA BÚSQUEDA
+         ==================================================================== -->
+    <string name="search_title">Buscar</string>
+    <string name="search_hint">Buscar canciones, artistas...</string>
+    <string name="search_placeholder">Explora nuevos tracks y artistas de Tomorrowland</string>
+    
+    <!-- ====================================================================
+         PANTALLA BIBLIOTECA
+         ==================================================================== -->
+    <string name="library_title">Tu Biblioteca</string>
+    <string name="library_placeholder">Aquí aparecerán tus playlists y favoritos</string>
+    <string name="liked_songs">Canciones Favoritas</string>
+    <string name="recently_played">Reproducido Recientemente</string>
+    
+    <!-- ====================================================================
+         PANTALLA PERFIL
+         ==================================================================== -->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_placeholder">Configura tu cuenta y preferencias</string>
+    <string name="student_name">Estudiante H8B</string>
+    <string name="student_email">estudiante@universidad.edu</string>
+    <string name="settings">Configuración</string>
+    <string name="about">Acerca de</string>
+    <string name="logout">Cerrar Sesión</string>
+    
+    <!-- ====================================================================
+         INFORMACIÓN DE TRACKS (5 TRACKS DE TOMORROWLAND)
+         ==================================================================== -->
+    
+    <!-- Track 1 -->
+    <string name="track_1_title">Pura Vida</string>
+    <string name="track_1_artist">Armin van Buuren</string>
+    <string name="track_1_badge">JSON_SRC, 320KBPS</string>
+    
+    <!-- Track 2 -->
+    <string name="track_2_title">High on Life</string>
+    <string name="track_2_artist">Martin Garrix</string>
+    <string name="track_2_badge">YT_DATA_V3</string>
+    
+    <!-- Track 3 -->
+    <string name="track_3_title">Mammoth</string>
+    <string name="track_3_artist">Dimitri Vegas &amp; Like Mike</string>
+    <string name="track_3_badge">LEGACY_IO</string>
+    
+    <!-- Track 4 -->
+    <string name="track_4_title">Innerbloom</string>
+    <string name="track_4_artist">RÜFÜS DU SOL</string>
+    
+    <!-- Track 5 -->
+    <string name="track_5_title">Adagio for Strings</string>
+    <string name="track_5_artist">Tiësto</string>
+    
+    <!-- ====================================================================
+         MENSAJES Y ESTADOS
+         ==================================================================== -->
+    <string name="loading">Cargando...</string>
+    <string name="error_loading">Error al cargar</string>
+    <string name="no_tracks">No hay tracks disponibles</string>
+    <string name="no_connection">Sin conexión a Internet</string>
+    <string name="retry">Reintentar</string>
+    
+    <!-- ====================================================================
+         ACCESIBILIDAD (CONTENT DESCRIPTIONS)
+         ==================================================================== -->
+    <string name="cd_album_art">Portada del álbum</string>
+    <string name="cd_track_thumbnail">Miniatura del track</string>
+    <string name="cd_play_button">Botón de reproducir</string>
+    <string name="cd_pause_button">Botón de pausar</string>
+    <string name="cd_previous_button">Botón de canción anterior</string>
+    <string name="cd_next_button">Botón de siguiente canción</string>
+    <string name="cd_shuffle_button">Botón de mezclar</string>
+    <string name="cd_repeat_button">Botón de repetir</string>
+    <string name="cd_favorite_button">Botón de favorito</string>
+    <string name="cd_back_button">Botón de volver</string>
+    <string name="cd_menu_button">Botón de menú</string>
+    <string name="cd_progress_bar">Barra de progreso de reproducción</string>
+    
+    <!-- ====================================================================
+         EDUCATIVO: CONCEPTOS DE PROGRAMACIÓN
+         ==================================================================== -->
+    <string name="concept_api">API: Application Programming Interface</string>
+    <string name="concept_json">JSON: JavaScript Object Notation</string>
+    <string name="concept_streaming">Streaming: Reproducción en tiempo real</string>
+    
+</resources>

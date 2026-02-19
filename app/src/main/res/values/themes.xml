@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Tomorrowland Audio Player - Tema de la Aplicación
+    Material Design 3 (Material You) - Tema Oscuro
+    ============================================================================
+    
+    🎨 MATERIAL DESIGN 3 (Material You):
+    
+    Es el sistema de diseño más reciente de Google que incluye:
+    - Dynamic Color: Colores que se adaptan al wallpaper del usuario
+    - Nuevos componentes: Cards, Buttons, Navigation con diseño actualizado
+    - Sistema de tokens: Colores semánticos (primary, secondary, tertiary, surface)
+    - Mejor accesibilidad: Contrastes mejorados
+    
+    🌙 TEMA OSCURO:
+    - Reduce fatiga visual
+    - Ahorra batería en pantallas OLED
+    - Estética moderna para apps de entretenimiento
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ====================================================================
+         TEMA PRINCIPAL DE LA APLICACIÓN
+         Hereda de Theme.Material3.Dark para modo oscuro
+         ==================================================================== -->
+    <style name="Theme.TomorrowlandAudioPlayer" parent="Theme.Material3.Dark.NoActionBar">
+        
+        <!-- =================================================================
+             COLORES PRIMARIOS
+             Estos definen la identidad visual de la app
+             ================================================================= -->
+        
+        <!-- Color primario: Azul Tomorrowland -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        
+        <!-- Color secundario: Violeta -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_container</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/on_secondary_container</item>
+        
+        <!-- Color terciario: Dorado -->
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="colorTertiaryContainer">@color/tertiary_container</item>
+        <item name="colorOnTertiary">@color/on_tertiary</item>
+        <item name="colorOnTertiaryContainer">@color/on_tertiary_container</item>
+        
+        <!-- =================================================================
+             COLORES DE SUPERFICIE Y FONDO
+             ================================================================= -->
+        
+        <!-- Fondo principal de la app -->
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        
+        <!-- Superficies (cards, sheets, dialogs) -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorSurfaceContainer">@color/surface_container</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+        
+        <!-- =================================================================
+             COLORES DE ERROR
+             ================================================================= -->
+        <item name="colorError">@color/error</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnError">@color/on_error</item>
+        
+        <!-- =================================================================
+             COLORES DE BORDES Y DIVISORES
+             ================================================================= -->
+        <item name="colorOutline">@color/outline</item>
+        
+        <!-- =================================================================
+             CONFIGURACIÓN DE LA BARRA DE ESTADO Y NAVEGACIÓN
+             ================================================================= -->
+        
+        <!-- Status bar transparente para efecto inmersivo -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        
+        <!-- Iconos claros en status bar (modo oscuro) -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        
+        <!-- =================================================================
+             CONFIGURACIÓN DE VENTANA
+             ================================================================= -->
+        
+        <!-- Habilitar edge-to-edge -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        
+        <!-- Animaciones de transición -->
+        <item name="android:windowAnimationStyle">@style/WindowAnimationStyle</item>
+        
+    </style>
+
+    <!-- ====================================================================
+         ESTILOS DE TEXTO PERSONALIZADOS
+         ==================================================================== -->
+    
+    <!-- Título grande (Headline) -->
+    <style name="TextStyle.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <!-- Título de sección -->
+    <style name="TextStyle.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <!-- Subtítulo -->
+    <style name="TextStyle.Subtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_subtitle</item>
+    </style>
+    
+    <!-- Texto de cuerpo -->
+    <style name="TextStyle.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+    
+    <!-- Caption (texto pequeño) -->
+    <style name="TextStyle.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+    </style>
+    
+    <!-- Badge/Label -->
+    <style name="TextStyle.Badge" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/text_overline</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <!-- ====================================================================
+         ESTILOS DE BOTONES
+         ==================================================================== -->
+    
+    <!-- Botón primario (lleno) -->
+    <style name="ButtonStyle.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="cornerRadius">@dimen/radius_full</item>
+    </style>
+    
+    <!-- Botón secundario (contorno) -->
+    <style name="ButtonStyle.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="cornerRadius">@dimen/radius_full</item>
+    </style>
+    
+    <!-- Botón de icono -->
+    <style name="ButtonStyle.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="iconTint">@color/text_primary</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+    
+    <!-- Botón de play grande -->
+    <style name="ButtonStyle.PlayMain" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="iconTint">@color/on_primary</item>
+        <item name="android:minWidth">@dimen/play_button_size</item>
+        <item name="android:minHeight">@dimen/play_button_size</item>
+    </style>
+
+    <!-- ====================================================================
+         ESTILOS DE CARDS
+         ==================================================================== -->
+    
+    <!-- Card estándar -->
+    <style name="CardStyle.Standard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/surface_container</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">@dimen/elevation_low</item>
+    </style>
+    
+    <!-- Card con glassmorphism -->
+    <style name="CardStyle.Glass" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/glass_background</item>
+        <item name="cardCornerRadius">@dimen/radius_lg</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <!-- ====================================================================
+         ESTILOS DE BOTTOM NAVIGATION
+         ==================================================================== -->
+    
+    <style name="BottomNavStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="itemIconTint">@drawable/nav_item_color</item>
+        <item name="itemTextColor">@drawable/nav_item_color</item>
+        <item name="itemActiveIndicatorStyle">@style/NavIndicatorStyle</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+    
+    <style name="NavIndicatorStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/primary_container</item>
+    </style>
+
+    <!-- ====================================================================
+         ANIMACIONES DE VENTANA
+         ==================================================================== -->
+    
+    <style name="WindowAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

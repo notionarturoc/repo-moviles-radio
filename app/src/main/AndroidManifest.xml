@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Tomorrowland Audio Player - AndroidManifest.xml
+    Archivo de configuración principal de la aplicación
+    ============================================================================
+    
+    Este archivo define:
+    - Permisos requeridos por la aplicación
+    - Componentes de la aplicación (Activities, Services, etc.)
+    - Configuración del tema y nombre de la app
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ====================================================================
+         PERMISOS DE LA APLICACIÓN
+         ==================================================================== -->
+    
+    <!-- Permiso de Internet: Necesario para cargar imágenes y streaming de audio -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <!-- Permiso de estado de red: Para verificar conectividad -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Permiso de Foreground Service: Para mantener la reproducción en segundo plano -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+
+    <!-- ====================================================================
+         CONFIGURACIÓN DE LA APLICACIÓN
+         ==================================================================== -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TomorrowlandAudioPlayer"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="34">
+
+        <!-- =================================================================
+             MainActivity: Actividad principal de la aplicación
+             Es el punto de entrada y contiene el NavHostFragment
+             ================================================================= -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            
+            <!-- Intent Filter: Define esta actividad como el launcher de la app -->
+            <intent-filter>
+                <!-- Acción MAIN: Esta es la actividad principal -->
+                <action android:name="android.intent.action.MAIN" />
+                
+                <!-- Categoría LAUNCHER: Aparece en el launcher del dispositivo -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

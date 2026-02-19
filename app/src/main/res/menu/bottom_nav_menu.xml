@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Menú de Navegación Inferior (Bottom Navigation)
+    ============================================================================
+    
+    📱 BOTTOM NAVIGATION:
+    
+    - Máximo 5 items recomendados
+    - Cada item tiene: icon, title
+    - Los IDs deben coincidir con los destinos del Navigation Graph
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Tab Home: Pantalla principal con playlist -->
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home" />
+    
+    <!-- Tab Search: Búsqueda de música -->
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/nav_search" />
+    
+    <!-- Tab Library: Biblioteca personal -->
+    <item
+        android:id="@+id/navigation_library"
+        android:icon="@drawable/ic_library"
+        android:title="@string/nav_library" />
+    
+    <!-- Tab Profile: Perfil del usuario -->
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/nav_profile" />
+    
+</menu>

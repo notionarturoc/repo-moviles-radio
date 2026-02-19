@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Navigation Graph - Grafo de Navegación
+    ============================================================================
+    
+    🗺️ QUÉ ES UN NAVIGATION GRAPH:
+    
+    Es un archivo XML que define todos los destinos (pantallas) de tu app
+    y las acciones de navegación entre ellos.
+    
+    VENTAJAS:
+    - Visualización gráfica en Android Studio
+    - Manejo automático del back stack
+    - Animaciones de transición
+    - Safe Args para pasar datos de forma segura
+    
+    COMPONENTES:
+    - fragment: Define un destino (pantalla)
+    - action: Define una navegación entre destinos
+    - argument: Define parámetros que recibe un destino
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <!-- ====================================================================
+         DESTINOS PRINCIPALES (Bottom Navigation)
+         ==================================================================== -->
+    
+    <!-- HomeFragment: Pantalla principal con playlist de Tomorrowland -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tomorrowland.audioplayer.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+        
+        <!-- Acción: Navegar de Home a Now Playing -->
+        <action
+            android:id="@+id/action_home_to_nowPlaying"
+            app:destination="@id/nowPlayingFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_bottom" />
+    </fragment>
+    
+    <!-- SearchFragment: Pantalla de búsqueda -->
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.tomorrowland.audioplayer.ui.search.SearchFragment"
+        android:label="@string/nav_search"
+        tools:layout="@layout/fragment_search" />
+    
+    <!-- LibraryFragment: Biblioteca personal -->
+    <fragment
+        android:id="@+id/navigation_library"
+        android:name="com.tomorrowland.audioplayer.ui.library.LibraryFragment"
+        android:label="@string/nav_library"
+        tools:layout="@layout/fragment_library" />
+    
+    <!-- ProfileFragment: Perfil del usuario -->
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.tomorrowland.audioplayer.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <!-- ====================================================================
+         DESTINOS SECUNDARIOS (Full Screen)
+         ==================================================================== -->
+    
+    <!-- NowPlayingFragment: Pantalla de reproducción completa -->
+    <fragment
+        android:id="@+id/nowPlayingFragment"
+        android:name="com.tomorrowland.audioplayer.ui.nowplaying.NowPlayingFragment"
+        android:label="@string/now_playing"
+        tools:layout="@layout/fragment_now_playing">
+        
+        <!-- Argumento: ID del track a reproducir -->
+        <argument
+            android:name="trackId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Icono de equalizer (graphic_eq) -->
+    <group
+        android:translateX="30"
+        android:translateY="30">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M14,36h4V12h-4v24zM22,44h4V4h-4v40zM6,28h4v-8H6v8zM30,36h4V12h-4v24zM38,20v8h4v-8h-4z" />
+    </group>
+</vector>

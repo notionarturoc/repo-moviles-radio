@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================================
+    Tomorrowland Audio Player - Dimensiones y Espaciados
+    ============================================================================
+    
+    📏 SISTEMA DE ESPACIADO (8dp Grid):
+    
+    Material Design recomienda usar múltiplos de 8dp:
+    - 4dp: Espaciado mínimo (margin_xs)
+    - 8dp: Espaciado pequeño (margin_sm)
+    - 16dp: Espaciado estándar (margin_md)
+    - 24dp: Espaciado medio-grande (margin_lg)
+    - 32dp: Espaciado grande (margin_xl)
+    
+    📱 ESTO ASEGURA:
+    - Consistencia visual en toda la app
+    - Alineación perfecta de elementos
+    - Mejor experiencia de usuario
+-->
+<resources>
+    
+    <!-- ====================================================================
+         MÁRGENES Y PADDING (Sistema de 8dp)
+         ==================================================================== -->
+    
+    <!-- Extra pequeño: 4dp -->
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="padding_xs">4dp</dimen>
+    
+    <!-- Pequeño: 8dp -->
+    <dimen name="margin_sm">8dp</dimen>
+    <dimen name="padding_sm">8dp</dimen>
+    
+    <!-- Medio: 12dp -->
+    <dimen name="margin_md">12dp</dimen>
+    <dimen name="padding_md">12dp</dimen>
+    
+    <!-- Estándar: 16dp (más usado) -->
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="padding_standard">16dp</dimen>
+    
+    <!-- Grande: 24dp -->
+    <dimen name="margin_lg">24dp</dimen>
+    <dimen name="padding_lg">24dp</dimen>
+    
+    <!-- Extra grande: 32dp -->
+    <dimen name="margin_xl">32dp</dimen>
+    <dimen name="padding_xl">32dp</dimen>
+    
+    <!-- Enorme: 48dp -->
+    <dimen name="margin_xxl">48dp</dimen>
+    <dimen name="padding_xxl">48dp</dimen>
+
+    <!-- ====================================================================
+         ESQUINAS REDONDEADAS (Border Radius)
+         ==================================================================== -->
+    
+    <!-- Radio pequeño: Para badges y botones pequeños -->
+    <dimen name="radius_sm">8dp</dimen>
+    
+    <!-- Radio medio: Para tarjetas y contenedores -->
+    <dimen name="radius_md">12dp</dimen>
+    
+    <!-- Radio estándar: 16dp -->
+    <dimen name="radius_standard">16dp</dimen>
+    
+    <!-- Radio grande: Para cards principales -->
+    <dimen name="radius_lg">20dp</dimen>
+    
+    <!-- Radio extra grande: Para modales -->
+    <dimen name="radius_xl">24dp</dimen>
+    
+    <!-- Radio circular: Para elementos circulares -->
+    <dimen name="radius_full">9999dp</dimen>
+
+    <!-- ====================================================================
+         TAMAÑOS DE ICONOS
+         ==================================================================== -->
+    
+    <!-- Icono pequeño: Para badges y listas -->
+    <dimen name="icon_sm">16dp</dimen>
+    
+    <!-- Icono medio: Para botones secundarios -->
+    <dimen name="icon_md">24dp</dimen>
+    
+    <!-- Icono estándar: Para la mayoría de usos -->
+    <dimen name="icon_standard">28dp</dimen>
+    
+    <!-- Icono grande: Para controles principales -->
+    <dimen name="icon_lg">32dp</dimen>
+    
+    <!-- Icono extra grande: Para botón de play principal -->
+    <dimen name="icon_xl">48dp</dimen>
+
+    <!-- ====================================================================
+         TAMAÑOS DE TEXTO (Typography Scale)
+         ==================================================================== -->
+    
+    <!-- Display: Títulos grandes -->
+    <dimen name="text_display">32sp</dimen>
+    
+    <!-- Headline: Títulos de sección -->
+    <dimen name="text_headline">24sp</dimen>
+    
+    <!-- Title: Títulos de cards -->
+    <dimen name="text_title">20sp</dimen>
+    
+    <!-- Subtitle: Subtítulos -->
+    <dimen name="text_subtitle">16sp</dimen>
+    
+    <!-- Body: Texto de cuerpo -->
+    <dimen name="text_body">14sp</dimen>
+    
+    <!-- Caption: Texto pequeño -->
+    <dimen name="text_caption">12sp</dimen>
+    
+    <!-- Overline: Texto muy pequeño (badges) -->
+    <dimen name="text_overline">10sp</dimen>
+
+    <!-- ====================================================================
+         COMPONENTES ESPECÍFICOS
+         ==================================================================== -->
+    
+    <!-- Thumbnail de track en lista -->
+    <dimen name="track_thumbnail_size">56dp</dimen>
+    
+    <!-- Album art en Now Playing -->
+    <dimen name="album_art_size">280dp</dimen>
+    
+    <!-- Botón de play principal -->
+    <dimen name="play_button_size">72dp</dimen>
+    
+    <!-- Botones de control secundarios -->
+    <dimen name="control_button_size">48dp</dimen>
+    
+    <!-- Mini player altura -->
+    <dimen name="mini_player_height">72dp</dimen>
+    
+    <!-- Bottom navigation altura -->
+    <dimen name="bottom_nav_height">56dp</dimen>
+    
+    <!-- Header altura -->
+    <dimen name="header_height">64dp</dimen>
+    
+    <!-- Hero card altura -->
+    <dimen name="hero_card_height">200dp</dimen>
+    
+    <!-- Progress bar altura -->
+    <dimen name="progress_height">4dp</dimen>
+    <dimen name="progress_height_thick">6dp</dimen>
+    
+    <!-- Divider altura -->
+    <dimen name="divider_height">1dp</dimen>
+    
+    <!-- Status bar spacer -->
+    <dimen name="status_bar_spacer">24dp</dimen>
+    
+    <!-- Track item altura -->
+    <dimen name="track_item_height">72dp</dimen>
+
+    <!-- ====================================================================
+         ELEVACIONES (Sombras)
+         ==================================================================== -->
+    
+    <dimen name="elevation_low">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_high">8dp</dimen>
+    <dimen name="elevation_extra_high">16dp</dimen>
+
+</resources>
