@@ -1,0 +1,7 @@
+com.tomorrowland.audioplayer.test.app-annotation-experimental-1.3.1-0 /Users/arturoc/.gradle/caches/8.13/transforms/40efb1aad0e6c1a3c9d9806b09e1c129/transformed/annotation-experimental-1.3.1/res
+com.tomorrowland.audioplayer.test.app-core-1.5.0-1 /Users/arturoc/.gradle/caches/8.13/transforms/922b13cf2123c7d9eee1c23fcd2520e8/transformed/core-1.5.0/res
+com.tomorrowland.audioplayer.test.app-androidTest-2 /Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/build/generated/res/resValues/androidTest/debug
+com.tomorrowland.audioplayer.test.app-updated_navigation_xml-3 /Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/build/generated/updated_navigation_xml/debugAndroidTest
+com.tomorrowland.audioplayer.test.app-mergeDebugAndroidTestResources-4 /Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.tomorrowland.audioplayer.test.app-mergeDebugAndroidTestResources-5 /Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.tomorrowland.audioplayer.test.app-debugAndroidTest-6 /Users/arturoc/Downloads/TomorrowlandAudioPlayer/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
